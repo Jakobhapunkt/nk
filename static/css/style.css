@@ -168,7 +168,7 @@ body.bg-grey5 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../img/hero.jpg) 90% 70% no-repeat;
+  background: url(../img/hero_noise.jpg) 90% 70% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -183,13 +183,15 @@ body:not(.feature-touch) .hero {
   letter-spacing: -0.02em;
   font-size: 100px;
   line-height: 1;
-  color: #0f171a;
+  color: #172326;
+  opacity: 0.95;
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
   text-align: center;
-  margin-top: -0.2em;
+  margin-top: -1em;
+  z-index: 3;
 }
 .abovehero .herotext.regular,
 .hero .herotext.regular {
@@ -207,6 +209,88 @@ body:not(.feature-touch) .hero {
 .hero .herotext em {
   font-style: italic;
 }
+@media screen and (max-width: 767px) {
+  .abovehero .herotext,
+  .hero .herotext {
+    font-size: 40px;
+    color: #ffffff;
+  }
+}
+.abovehero .herotext.sub,
+.hero .herotext.sub {
+  font-family: 'Apercu Web', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  font-size: 25px;
+  margin-top: 0.75em;
+  color: #6b966e;
+  z-index: 1;
+  -webkit-transform: rotate(180deg);
+}
+.abovehero .herotext.sub.light,
+.hero .herotext.sub.light {
+  font-weight: 300;
+}
+.abovehero .herotext.sub.regular,
+.hero .herotext.sub.regular {
+  font-weight: 400;
+}
+.abovehero .herotext.sub.medium,
+.hero .herotext.sub.medium {
+  font-weight: 500;
+}
+.abovehero .herotext.sub.bold,
+.hero .herotext.sub.bold {
+  font-weight: 600;
+}
+.abovehero .herotext.sub.uppercase,
+.hero .herotext.sub.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+.abovehero .herotext.sub strong,
+.hero .herotext.sub strong {
+  font-weight: 600;
+}
+.abovehero .herotext.sub em,
+.hero .herotext.sub em {
+  font-style: italic;
+}
+@media screen and (max-width: 767px) {
+  .abovehero .herotext.sub,
+  .hero .herotext.sub {
+    font-size: 18px;
+  }
+}
+.abovehero .herotext.sub:before,
+.hero .herotext.sub:before,
+.abovehero .herotext.sub:after,
+.hero .herotext.sub:after {
+  display: inline-block;
+  height: 5px;
+  width: 50px;
+  background: #6b966e;
+  content: '';
+  position: relative;
+  top: -0.25em;
+}
+@media screen and (max-width: 767px) {
+  .abovehero .herotext.sub:before,
+  .hero .herotext.sub:before,
+  .abovehero .herotext.sub:after,
+  .hero .herotext.sub:after {
+    display: none;
+  }
+}
+.abovehero .herotext.sub:before,
+.hero .herotext.sub:before {
+  left: -1em;
+}
+.abovehero .herotext.sub:after,
+.hero .herotext.sub:after {
+  right: -1em;
+}
 .abovehero .herotext .amp,
 .hero .herotext .amp {
   margin: 0 0.25em 0 0.2em;
@@ -214,7 +298,12 @@ body:not(.feature-touch) .hero {
 }
 .abovehero {
   z-index: 2;
-  background-image: url(../img/handshadow.png);
+  background-image: url(../img/handshadow_noise.png);
+}
+@media screen and (max-width: 767px) {
+  .abovehero {
+    display: none;
+  }
 }
 a {
   cursor: pointer;
