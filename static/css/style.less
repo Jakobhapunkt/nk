@@ -138,6 +138,23 @@
 strong {
 	font-weight: 600;
 }
+.unselectable(){
+	-webkit-touch-callout: none;
+    -webkit-user-select:   none;
+    -khtml-user-select:    none;
+    -moz-user-select:      none;
+    -ms-user-select:       none;
+    user-select:           none;
+}
+::selection {
+  background: @green_dk;
+  color: @green_xlt;
+}
+::-moz-selection {
+  background: @green_dk;
+  color: @green_xlt;
+}
+
 
 
 /* GENERAL STRUCTURE
@@ -472,6 +489,7 @@ h3 {
 	font-size: 0;
 	line-height: 0;
 	text-align: center;
+	.unselectable();
 
 	@media @print {
 		display: none;
@@ -552,6 +570,7 @@ h3 {
 	color: @white;
 	z-index: 100;
 	padding: 10px 0;
+	.unselectable();
 
 	a {
 		.sans;

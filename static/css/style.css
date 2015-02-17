@@ -51,6 +51,14 @@
 strong {
   font-weight: 600;
 }
+::selection {
+  background: #557958;
+  color: #89ab8b;
+}
+::-moz-selection {
+  background: #557958;
+  color: #89ab8b;
+}
 /* GENERAL STRUCTURE
 *************************************************/
 body {
@@ -642,6 +650,12 @@ body.invert .divider {
   font-size: 0;
   line-height: 0;
   text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @media print {
   .nav {
@@ -762,6 +776,12 @@ body.invert .nav a.current {
   color: #ffffff;
   z-index: 100;
   padding: 10px 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .mobilenav a {
   font-family: 'Apercu Web', Helvetica Neue, Helvetica, Arial, sans-serif;
