@@ -10,6 +10,8 @@
         <link rel='stylesheet' type='text/css' href='static/css/style.css' />
 
         <script type='text/javascript' src='static/js/jquery-1.9.0.min.js'></script>
+        <script type='text/javascript' src='static/js/imgloaded.min.js'></script>
+        <script type='text/javascript' src='static/js/packery.min.js'></script>
         <!--<script type='text/javascript' src='static/js/jquery.easing.js'></script>-->
         <script type='text/javascript' src='static/js/scripts.js'></script>
 
@@ -22,14 +24,31 @@
 
 
         <div class='nav'>
+            <a class='mobilenav-toggle'>Menu</a>
             <a data-num='0'>Home</a>
-            <a data-num='1'>Kay &amp; Nathan</a>
-            <a data-num='2'>Wedding Party</a>
-            <a data-num='3'>Getting Here</a>
-            <a data-num='4'>Lodging</a>
-            <a data-num='5'>Itinerary</a>
-            <a data-num='6'>#kayandnathan</a>
-            <a data-num='7'>Registry</a>
+            <a data-num='1'>Photos</a>
+            <!--<a data-num='2'>Wedding Party</a>-->
+            <a data-num='2'>Getting Here</a>
+            <a data-num='3'>Lodging</a>
+            <a data-num='4'>Itinerary</a>
+            <a data-num='5'>#kayandnathan</a>
+            <a data-num='6'>Registry</a>
+        </div>
+
+        <div class='mobilenav' style='display:none'>
+            <div class='vcenter-outer'>
+                <div class='vcenter-inner'>
+                    <a class='mobilenav-toggle'>Close</a>
+                    <a data-num='0'>Home</a>
+                    <a data-num='1'>Photos</a>
+                    <!--<a data-num='2'>Wedding Party</a>-->
+                    <a data-num='2'>Getting Here</a>
+                    <a data-num='3'>Lodging</a>
+                    <a data-num='4'>Itinerary</a>
+                    <a data-num='5'>#kayandnathan</a>
+                    <a data-num='6'>Registry</a>
+                </div>
+            </div>
         </div>
 
 
@@ -40,12 +59,12 @@
                 <div class='slide color-lightongrey90' data-invert='true' data-bg='grey90'>
                     <div class='membrane'>
                         <div class='hero'>
-                            <div class='abovehero'>
-                            </div>
+                            <!--<div class='abovehero'>
+                            </div>-->
 
                             <div class='herotext'>Kay<span class='amp'>&amp;</span>Nathan</div>
 
-                            <div class='herotext sub'>are getting married!</div>
+                            <div class='herotext sub'>Saturday<span class='mono regular'>,</span> June 13<span class='mono regular'>,</span> 2015</div>
                         </div>
                     </div>
                 </div><!-- end .slide -->
@@ -55,9 +74,22 @@
 
                 <div class='slide color-lightongrey90' data-invert='true' data-bg='grey90'>
                     <div class='membrane'>
-                        <h2>Kay &amp; Nathan</h2>
+                        <h2>Photos</h2>
 
-                        <div class='divider'></div>
+                        <div class='packery-container'>
+                            <img class='item big' src='static/img/photos/sm/9.jpg' />
+                            <img class='item' src='static/img/photos/xsm/1.jpg' />
+                            <img class='item' src='static/img/photos/xsm/2.jpg' />
+                            <img class='item' src='static/img/photos/xsm/3.jpg' />
+                            <img class='item' src='static/img/photos/xsm/4.jpg' />
+                            <img class='item' src='static/img/photos/xsm/5.jpg' />
+                            <img class='item' src='static/img/photos/xsm/6.jpg' />
+                            <img class='item' src='static/img/photos/xsm/7.jpg' />
+                            <img class='item' src='static/img/photos/sm/10.jpg' />
+                            <img class='item' src='static/img/photos/xsm/8.jpg' />
+                            
+                            
+                        </div>
 
                         <div class='endspacer'></div>
                     </div>
@@ -66,7 +98,7 @@
 
 
 
-                <div class='slide color-lightongreen' data-invert='true' data-bg='green'>
+                <!--<div class='slide color-lightongreen' data-invert='true' data-bg='green'>
                     <div class='membrane'>
                         <h2>Wedding Party</h2>
 
@@ -74,7 +106,7 @@
 
                         <div class='endspacer'></div>
                     </div>
-                </div><!-- end .slide -->
+                </div>--><!-- end .slide -->
 
 
 
@@ -129,12 +161,12 @@
 
                         <div class='divider'></div>
 
-                        <h3>Friday Welcome Reception</h3>
+                        <h3>Friday Welcome Reception <span class='small'>Friday, June 12</span></h3>
                         <p>Check back for details.</p>
 
                         <div class='divider'></div>
 
-                        <h3>Wedding Day!</h3>
+                        <h3>Wedding Day! <span class='small'>Saturday, June 13</span></h3>
                         <p><em>Transportation to the Wedding</em></p>
                         <p>We have arranged for a 30-passenger bus to shuttle guests from the Radisson Hotel to Nicholas Conservatory, where both the wedding and reception will be held.  This bus will leave the hotel for the Gardens at 3:30, 4:00, and 4:30, and will also be available for transport back to the hotels after the wedding.  If guests are not staying at the Radisson Hotel, but a hotel nearby, feel free to walk over to the Radisson lobby for transportation!</p>
                         <p>Once you arrive at the venue, there is a trolley available to shuttle guests from the entrance to the wedding site.  For those that would like to walk- please do!  It is roughly a quarter mile.</p>

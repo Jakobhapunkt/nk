@@ -11,7 +11,8 @@ $(document).ready(function($) {
         hero: $('.hero'),
 
         nav: $('.nav'),
-        nav_links: $('.nav a'),
+        mobilenav: $('.mobilenav'),
+        nav_links: $('.nav a, .mobilenav a'),
 
         carousel: $('.page-carousel'),
         track: $('.page-carousel .track'),
@@ -22,7 +23,9 @@ $(document).ready(function($) {
         win_height: elm.win.height(),
         win_width:  elm.win.width(),
 
-        current_slide: 0
+        current_slide: 0,
+
+        mobilenav_visible: false
     };
 
     features = {
@@ -59,6 +62,15 @@ $(document).ready(function($) {
 
             elm.nav_links.on('click', handlers.nav_link_click);
             elm.win.on('resize', handlers.resize);
+
+            // packery
+            imagesLoaded('.packery-container', function(){
+                $('.packery-container').packery({
+                  itemSelector: '.item',
+                  gutter: 0
+                });
+            });
+
         },
         size_carousel: function(){
             elm.slides.css({
@@ -92,8 +104,6 @@ $(document).ready(function($) {
             }
 
             // move track
-            
-
             if (features.transform3d) {
                 elm.track.css({
                     '-webkit-transform': 'translate3d('+shift_left+'px, 0, 0)',
@@ -110,6 +120,15 @@ $(document).ready(function($) {
             elm.carousel.css('height', current_slide.height());
             
             it.current_slide = num;
+        },
+        mobilenav_toggle: function(){
+            if (it.mobilenav_visible) {
+                elm.mobilenav.fadeOut(500);
+                it.mobilenav_visible = false;
+            } else {
+                elm.mobilenav.fadeIn(500);
+                it.mobilenav_visible = true;
+            }
         }
     };
 
@@ -125,10 +144,18 @@ $(document).ready(function($) {
         nav_link_click: function(){
             var link = $(this);
 
-            elm.nav_links.removeClass('current');
-            link.addClass('current');
+            if (link.hasClass('mobilenav-toggle')) {
+                fn.mobilenav_toggle();
+            } else {
+                elm.nav_links.removeClass('current');
+                link.addClass('current');
 
-            fn.goto_slide(link.data('num'));
+                fn.goto_slide(link.data('num'));
+
+                if (it.mobilenav_visible) {
+                    fn.mobilenav_toggle();
+                }
+            }
         }
     };
 

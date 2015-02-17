@@ -3,6 +3,9 @@
 @gutter: 30px;
 @halfgutter: @gutter/2;
 
+@divider_margin: 75px;
+@divider_height: 5px;
+
 @fontsize: 16px;
 @lineheight: 1.5;
 
@@ -249,7 +252,7 @@ body {
 			margin-top: 0.75em;
 			color: @green;
 			z-index: 1;
-			-webkit-transform: rotate(180deg);
+			//-webkit-transform: rotate(180deg);
 			@media @phone {
 				font-size: 18px;
 			}
@@ -349,6 +352,11 @@ h2 {
 	line-height: 1;
 	text-align: center;
 	position: relative;
+	word-break: break-word;
+
+	@media @phone {
+		font-size: 40px;
+	}
 }
 
 h3 {
@@ -360,6 +368,13 @@ h3 {
 	line-height: 1;
 	margin-bottom: 1em;
 	margin-top: 4em;
+
+	.small {
+		margin-top: 0.5em;
+		display: block;
+		font-size: 75%;
+		.sans.regular;
+	}
 }
 
 .page-carousel {
@@ -429,9 +444,9 @@ h3 {
 }
 
 .divider {
-	height: 5px;
+	height: @divider_height;
 	width: 100px;
-	margin: 75px auto;
+	margin: @divider_margin auto;
 	background: @white;
 	.transition(all, @slide_speed/2);
 	body.invert & {
@@ -471,6 +486,19 @@ h3 {
 		display: inline-block;
 		color: @grey70;
 		position: relative;
+
+		&.mobilenav-toggle {
+			display: none
+		}
+
+		@media @mobile {
+			&:not(.mobilenav-toggle) {
+				display: none;
+			}
+			&.mobilenav-toggle {
+				display: inline-block;
+			}
+		}
 
 		&:before {
 			content: '';
@@ -514,6 +542,40 @@ h3 {
 	}
 }
 
+.mobilenav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: fadeout(@green_xdk, 10%);
+	color: @white;
+	z-index: 100;
+	padding: 10px 0;
+
+	a {
+		.sans;
+		.sans.bold;
+		.sans.uppercase;
+		font-size: 22px;
+		line-height: 1;
+		padding: 12px 20px;
+		display: block;
+		color: @grey10;
+		position: relative;
+		text-align: center;
+
+		&.mobilenav-toggle {
+			opacity: 0.5;
+			padding-bottom: 30px;
+		}
+
+		&:hover {
+			color: @green_xlt;
+		}
+	}
+}
+
 
 
 /* TEXT THINGS
@@ -527,8 +589,48 @@ h3 {
 	text-align: center;
 	color: @grey10;
 }
+.vcenter-outer {
+	display:table;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	border-collapse: collapse;
+	.vcenter-inner {
+		display: table-cell;
+		width: 100%;
+		height: 100%;
+		vertical-align: middle;
+		border-collapse: collapse;
+	}
+}
 
 
+
+/* IMG THINGS
+*************************************************/
+.packery-container {
+	margin-top: @divider_margin;
+	margin-bottom: 50px;
+
+	.item {
+		border-top: 5px solid @green;
+		display: block;
+		width: 33.33%;
+		margin: 0;
+
+		@media @phone {
+			width: 50%;
+		}
+
+		&.big {
+			width: 66.66%;
+
+			@media @phone {
+				width: 100%;
+			}
+		}
+	}
+}
 
 /* COLOR SCHEMES
 *************************************************/
