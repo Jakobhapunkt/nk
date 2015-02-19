@@ -194,7 +194,7 @@ body:not(.feature-touch) .hero {
   color: #172326;
   opacity: 0.95;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 0;
   right: 0;
   text-align: center;
@@ -220,60 +220,89 @@ body:not(.feature-touch) .hero {
 @media screen and (max-width: 767px) {
   .abovehero .herotext,
   .hero .herotext {
+    top: 90%;
+  }
+}
+.abovehero .herotext img,
+.hero .herotext img,
+.abovehero .herotext svg,
+.hero .herotext svg {
+  width: 250px;
+  height: 196px;
+  display: block;
+  margin: 0 auto 0;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -125px;
+}
+@media screen and (max-width: 1015px) {
+  .abovehero .herotext img,
+  .hero .herotext img,
+  .abovehero .herotext svg,
+  .hero .herotext svg {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .abovehero .herotext,
+  .hero .herotext {
     font-size: 40px;
     color: #ffffff;
   }
 }
-.abovehero .herotext.sub,
-.hero .herotext.sub {
+.abovehero .herotext .sub,
+.hero .herotext .sub {
   font-family: 'Apercu Web', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.075em;
-  font-size: 25px;
-  margin-top: 0.75em;
+  margin-top: 1em;
+  font-size: 25%;
   color: #6b966e;
   z-index: 1;
 }
-.abovehero .herotext.sub.light,
-.hero .herotext.sub.light {
+.abovehero .herotext .sub.light,
+.hero .herotext .sub.light {
   font-weight: 300;
 }
-.abovehero .herotext.sub.regular,
-.hero .herotext.sub.regular {
+.abovehero .herotext .sub.regular,
+.hero .herotext .sub.regular {
   font-weight: 400;
 }
-.abovehero .herotext.sub.medium,
-.hero .herotext.sub.medium {
+.abovehero .herotext .sub.medium,
+.hero .herotext .sub.medium {
   font-weight: 500;
 }
-.abovehero .herotext.sub.bold,
-.hero .herotext.sub.bold {
+.abovehero .herotext .sub.bold,
+.hero .herotext .sub.bold {
   font-weight: 600;
 }
-.abovehero .herotext.sub.uppercase,
-.hero .herotext.sub.uppercase {
+.abovehero .herotext .sub.uppercase,
+.hero .herotext .sub.uppercase {
   text-transform: uppercase;
   letter-spacing: 0.075em;
 }
-.abovehero .herotext.sub strong,
-.hero .herotext.sub strong {
+.abovehero .herotext .sub strong,
+.hero .herotext .sub strong {
   font-weight: 600;
 }
-.abovehero .herotext.sub em,
-.hero .herotext.sub em {
+.abovehero .herotext .sub em,
+.hero .herotext .sub em {
   font-style: italic;
 }
 @media screen and (max-width: 767px) {
-  .abovehero .herotext.sub,
-  .hero .herotext.sub {
-    font-size: 18px;
+  .abovehero .herotext .sub,
+  .hero .herotext .sub {
+    font-size: 16px;
+    color: #ffffff;
+    opacity: 0.8;
   }
 }
-.abovehero .herotext.sub:before,
-.hero .herotext.sub:before,
-.abovehero .herotext.sub:after,
-.hero .herotext.sub:after {
+.abovehero .herotext .sub:before,
+.hero .herotext .sub:before,
+.abovehero .herotext .sub:after,
+.hero .herotext .sub:after {
   display: inline-block;
   height: 5px;
   width: 50px;
@@ -283,19 +312,19 @@ body:not(.feature-touch) .hero {
   top: -0.25em;
 }
 @media screen and (max-width: 767px) {
-  .abovehero .herotext.sub:before,
-  .hero .herotext.sub:before,
-  .abovehero .herotext.sub:after,
-  .hero .herotext.sub:after {
+  .abovehero .herotext .sub:before,
+  .hero .herotext .sub:before,
+  .abovehero .herotext .sub:after,
+  .hero .herotext .sub:after {
     display: none;
   }
 }
-.abovehero .herotext.sub:before,
-.hero .herotext.sub:before {
+.abovehero .herotext .sub:before,
+.hero .herotext .sub:before {
   left: -1em;
 }
-.abovehero .herotext.sub:after,
-.hero .herotext.sub:after {
+.abovehero .herotext .sub:after,
+.hero .herotext .sub:after {
   right: -1em;
 }
 .abovehero .herotext .amp,

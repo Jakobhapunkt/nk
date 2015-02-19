@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="250.00038px" height="196px" viewBox="0 0 250.00038 196" enable-background="new 0 0 250.00038 196" xml:space="preserve">
+<g id="static_lines">
+</g>
+<g id="flag">
+	<g>
+		<polyline fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" points="189.38885,104.45293 
+			227.72218,119.99618 227.72218,184.6487 		"/>
+		<polyline fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" points="227.72218,156.2942 240.49995,161.47528 
+			240.49995,182.21484 		"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="138.27774" y1="57.79275" x2="138.27774" y2="178.86829"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="151.05551" y1="62.97383" x2="151.05551" y2="186.16986"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="163.8333" y1="7.99999" x2="163.8333" y2="180.99791"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="176.61107" y1="73.33599" x2="176.61107" y2="178.86829"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="202.16663" y1="109.63401" x2="202.16663" y2="174.91325"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="214.9444" y1="114.81509" x2="214.9444" y2="180.99791"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="189.38885" y1="104.45293" x2="125.49996" y2="104.45293"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="227.72218" y1="156.2942" x2="125.49996" y2="156.2942"/>
+		<polyline fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" points="61.61107,183.43178 61.61107,78.51707 
+			125.49996,52.61167 189.38884,78.51707 189.38884,183.43178 		"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="125.49996" y1="52.61167" x2="125.49996" y2="184.34447"/>
+		<polyline fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" points="61.61107,104.45293 23.27774,119.99618 
+			23.27774,184.6487 		"/>
+		<polyline fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" points="23.27774,156.2942 10.49996,161.47528 
+			10.49996,182.21484 		"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="112.72218" y1="57.79275" x2="112.72218" y2="178.86829"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="99.9444" y1="62.97383" x2="99.9444" y2="186.16986"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="87.16663" y1="68.15491" x2="87.16663" y2="180.99791"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="74.38885" y1="73.33599" x2="74.38885" y2="178.86829"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="48.8333" y1="109.63401" x2="48.8333" y2="174.91325"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="36.05552" y1="114.81509" x2="36.05552" y2="180.99791"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="61.61107" y1="104.45293" x2="125.49996" y2="104.45293"/>
+		
+			<line fill="none" stroke="#172326" stroke-width="3" stroke-miterlimit="10" x1="23.27774" y1="156.2942" x2="125.49996" y2="156.2942"/>
+	</g>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="167" y="7.99999" width="28" height="33">
+			
+				<feColorMatrix  type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source"/>
+			<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+			<feBlend  in="source" in2="back" mode="normal"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="167" y="7.99999" width="28" height="33" id="SVGID_1_">
+		<g filter="url(#Adobe_OpacityMaskFilter)">
+			<path fill="#FFFFFF" d="M177.86279,22.0654h0.91806l5.73558-7.03642h4.38596l-7.11319,8.46383l6.83206,9.38189h-4.38492
+				l-5.55714-7.80095h-0.81641v7.80095h-3.54362V15.02898h3.54362V22.0654z"/>
+			<g>
+				<path fill="#FFFFFF" d="M193.05382,26.6799c-0.95934,0.80943-1.76845,1.36389-2.78763,1.36389
+					c-1.19934,0-2.1138-0.89951-2.1138-2.08356c0-1.34893,0.8091-2.0686,2.48843-2.87803
+					c-0.22504-0.37463-0.46503-0.88422-0.46503-1.49885c0-1.2143,0.94438-2.47348,2.56323-2.47348
+					c1.30405,0,2.02405,0.91446,2.02405,1.90373c0,1.34926-1.15446,2.02373-2.09885,2.45852l0.85463,1.24389l2.30827-1.97852
+					l0.76422,0.9743l-2.38307,2.00877l0.55479,0.82438h1.5434l-0.28423,1.31902h-2.80322l0.14958-0.71967L193.05382,26.6799z
+					 M192.39432,25.69032l-1.06407-1.58893c-1.28909,0.67479-1.61884,1.0195-1.61884,1.64909
+					c0,0.53951,0.34471,0.89918,0.839,0.89918C191.21059,26.64966,191.8096,26.20023,192.39432,25.69032z M193.29382,21.17848
+					c0-0.41951-0.19513-0.74959-0.65952-0.74959c-0.61462,0-1.03413,0.55479-1.03413,1.0943c0,0.24,0.05983,0.47967,0.22438,0.71967
+					l0.15025,0.22471C192.97902,21.97295,193.29382,21.73327,193.29382,21.17848z"/>
+			</g>
+		</g>
+	</mask>
+	<rect x="167" y="8" mask="url(#SVGID_1_)" fill="#172326" width="28" height="33"/>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="192" y="10.99999" width="28" height="33">
+			
+				<feColorMatrix  type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source"/>
+			<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+			<feBlend  in="source" in2="back" mode="normal"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="192" y="10.99999" width="28" height="33" id="SVGID_2_">
+		<g filter="url(#Adobe_OpacityMaskFilter_1_)">
+			<path fill="#FFFFFF" d="M203.51964,36.40839h-3.49278V18.56267h4.66501l6.01669,11.87986V18.56267h3.4928v17.84573h-4.30817
+				l-6.37355-12.39024V36.40839z"/>
+		</g>
+	</mask>
+	<polygon mask="url(#SVGID_2_)" fill="#172326" points="220,43.99999 192,43.99999 195,40.99999 195,10.99999 220,10.99999 	"/>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter_2_" filterUnits="userSpaceOnUse" x="192" y="10.99999" width="28" height="33">
+			
+				<feColorMatrix  type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source"/>
+			<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+			<feBlend  in="source" in2="back" mode="normal"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="192" y="10.99999" width="28" height="33" id="SVGID_3_">
+		<g filter="url(#Adobe_OpacityMaskFilter_2_)">
+			<path fill="#FFFFFF" d="M203.51964,36.40839h-3.49278V18.56267h4.66501l6.01669,11.87986V18.56267h3.4928v17.84573h-4.30817
+				l-6.37355-12.39024V36.40839z"/>
+		</g>
+	</mask>
+	<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="192" y1="27.49999" x2="220" y2="27.49999">
+		<stop  offset="0" style="stop-color:#000000;stop-opacity:0.8"/>
+		<stop  offset="0.14397" style="stop-color:#000000;stop-opacity:0.68482"/>
+		<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
+	</linearGradient>
+	<polygon mask="url(#SVGID_3_)" fill="url(#SVGID_4_)" points="220,43.99999 192,43.99999 195,40.99999 195,10.99999 220,10.99999 	
+		"/>
+	<polygon fill="#172326" points="192,43.99999 192,40.99999 195,40.99999 	"/>
+	<polygon opacity="0.2" fill="#FFFFFF" points="192,43.99999 192,40.99999 195,40.99999 	"/>
+</g>
+</svg>

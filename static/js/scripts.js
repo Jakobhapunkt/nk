@@ -24,6 +24,7 @@ $(document).ready(function($) {
         win_width:  elm.win.width(),
 
         current_slide: 0,
+        current_slide_num: elm.slides.eq(0),
 
         mobilenav_visible: false
     };
@@ -63,11 +64,15 @@ $(document).ready(function($) {
             elm.nav_links.on('click', handlers.nav_link_click);
             elm.win.on('resize', handlers.resize);
 
-            // packery
+            // setup packery
             imagesLoaded('.packery-container', function(){
                 $('.packery-container').packery({
                   itemSelector: '.item',
                   gutter: 0
+                });
+
+                $('.packery-container').packery('on', 'layoutComplete', function(){
+                    fn.set_carousel_height();
                 });
             });
 
@@ -81,6 +86,9 @@ $(document).ready(function($) {
         goto_slide: function(num) {
             var current_slide = elm.slides.eq(num);
             var shift_left = -1 * num * it.win_width;
+
+            it.current_slide_num = num;
+            it.current_slide     = current_slide;
 
             // set classes
             elm.body.addClass('transitioning');
@@ -117,9 +125,12 @@ $(document).ready(function($) {
             }
 
             // set slide height
-            elm.carousel.css('height', current_slide.height());
+            fn.set_carousel_height();
             
-            it.current_slide = num;
+        },
+        set_carousel_height: function(){
+            elm.carousel.css('height', '');
+            elm.carousel.css('height', it.current_slide.height());
         },
         mobilenav_toggle: function(){
             if (it.mobilenav_visible) {
@@ -139,7 +150,7 @@ $(document).ready(function($) {
             it.win_width =  elm.win.width();
 
             fn.size_carousel();
-            fn.goto_slide(it.current_slide);
+            fn.goto_slide(it.current_slide_num);
         },
         nav_link_click: function(){
             var link = $(this);
