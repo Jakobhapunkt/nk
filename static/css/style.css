@@ -220,7 +220,7 @@ body:not(.feature-touch) .hero {
 @media screen and (max-width: 767px) {
   .abovehero .herotext,
   .hero .herotext {
-    top: 90%;
+    top: 85%;
   }
 }
 .abovehero .herotext img,
