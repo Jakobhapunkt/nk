@@ -160,6 +160,7 @@ $(document).ready(function($) {
             } else {
                 elm.nav_links.removeClass('current');
                 link.addClass('current');
+                elm.nav_links.filter('[data-num="'+link.data('num')+'"]').addClass('current');
 
                 fn.goto_slide(link.data('num'));
 

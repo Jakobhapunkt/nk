@@ -159,6 +159,9 @@ strong {
 
 /* GENERAL STRUCTURE
 *************************************************/
+html {
+	overflow-y: scroll;
+}
 body {
 	.sans;
 	.sans.regular;
@@ -239,7 +242,7 @@ body {
 	background-size: cover;
 
 	body:not(.feature-touch) & {
-		background-attachment: fixed;
+		//background-attachment: fixed;
 	}
 
 	.herotext {
@@ -247,7 +250,8 @@ body {
 		letter-spacing: -0.02em;
 		font-size: 100px;
 		line-height: 1;
-		color: @grey85;
+		//color: @grey85;
+		color: @white;
 		opacity: 0.95;
 		//text-shadow: 0 0 0.25em fadeout(@grey90, 70%);
 		position: absolute;
@@ -301,7 +305,7 @@ body {
 			&:before,
 			&:after {
 				display: inline-block;
-				height: 5px;
+				height: 3px;
 				width: 50px;
 				background: @green;
 				content: '';
@@ -433,6 +437,12 @@ h3 {
 		width: 99999999px;
 		position: relative;
 		.transition(all, @slide_speed);
+		@_easing: ~'cubic-bezier(0.645, 0.045, 0.355, 1)';
+		-webkit-transition-timing-function: @_easing;
+		//-moz-transition-timing-function: @_easing;
+		//-ms-transition-timing-function: @_easing;
+		//-o-transition-timing-function: @_easing;
+		transition-timing-function: @_easing;
 
 		@media @print {
 			width: auto;
@@ -616,6 +626,26 @@ h3 {
 		&:hover {
 			color: @green_xlt;
 		}
+
+
+		&.current {
+			&:before,
+			&:after {
+				display: inline-block;
+				height: 3px;
+				width: 50px;
+				background: @white;
+				content: '';
+				position: relative;
+				top: -0.25em;
+			}
+			&:before {
+				left: -1em;
+			}
+			&:after {
+				right: -1em;
+			}
+		}
 	}
 }
 
@@ -658,7 +688,7 @@ h3 {
 	.item {
 		border-top: 5px solid @green;
 		display: block;
-		width: 33.33%;
+		width: 33.3%;
 		margin: 0;
 
 		@media @phone {
@@ -666,7 +696,7 @@ h3 {
 		}
 
 		&.big {
-			width: 66.66%;
+			width: 66.6%;
 
 			@media @phone {
 				width: 100%;
@@ -677,32 +707,45 @@ h3 {
 
 /* COLOR SCHEMES
 *************************************************/
+.white-link(){
+	p a {
+		color: @white;
+		&:after {
+			background: @white;
+		}
+	}
+}
 .slide.color-lightongrey90 {
 	color: @white;
+	.white-link();
 	.divider {
 		background: @grey70;
 	}
 }
 .slide.color-lightongrey80 {
 	color: @white;
+	.white-link();
 	.divider {
 		background: @grey60;
 	}
 }
 .slide.color-lightongreen {
 	color: @white;
+	.white-link();
 	.divider {
-		background: darken(@green, 5%);
+		background: darken(@green, 10%);
 	}
 }
 .slide.color-lightongreendk {
 	color: @white;
+	.white-link();
 	.divider {
 		background: darken(@green_dk, 5%);
 	}
 }
 .slide.color-lightongreenlt {
 	color: @white;
+	.white-link();
 	.divider {
 		background: darken(@green_lt, 10%);
 	}
