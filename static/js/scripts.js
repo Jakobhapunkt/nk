@@ -16,7 +16,9 @@ $(document).ready(function($) {
 
         carousel: $('.page-carousel'),
         track: $('.page-carousel .track'),
-        slides: $('.page-carousel .slide')
+        slides: $('.page-carousel .slide'),
+
+        imgrows_to_fit: $('.imgrow.fit')
     };
 
     it = {
@@ -65,7 +67,7 @@ $(document).ready(function($) {
             elm.win.on('resize', handlers.resize);
 
             // setup packery
-            imagesLoaded('.packery-container', function(){
+            /*imagesLoaded('.packery-container', function(){
                 $('.packery-container').packery({
                   itemSelector: '.item',
                   gutter: 0
@@ -74,8 +76,34 @@ $(document).ready(function($) {
                 $('.packery-container').packery('on', 'layoutComplete', function(){
                     fn.set_carousel_height();
                 });
+            });*/
+            imagesLoaded('.imgrow', function(){
+                fn.fit_imgrows();
+                fn.set_carousel_height();
             });
 
+        },
+        fit_imgrows: function(row){
+            elm.imgrows_to_fit.each(function(){
+
+                var imgs = $(this).find('img');
+                var img1 = imgs.eq(0);
+                var img2 = imgs.eq(1);
+
+                imgs.css('height','');
+
+                if (img1.offset().top != img2.offset().top) {
+                    shrink_imgs();
+                }
+
+                function shrink_imgs() {
+                    imgs.css('height', img1.height() - 5);
+                    if (img1.offset().top != img2.offset().top) {
+                        shrink_imgs();
+                    }
+                }
+                fn.set_carousel_height();
+            });
         },
         size_carousel: function(){
             elm.slides.css({
@@ -149,6 +177,7 @@ $(document).ready(function($) {
             it.win_height = elm.win.height();
             it.win_width =  elm.win.width();
 
+            fn.fit_imgrows();
             fn.size_carousel();
             fn.goto_slide(it.current_slide_num);
         },

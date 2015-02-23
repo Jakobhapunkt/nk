@@ -932,6 +932,45 @@ body.invert .nav a.current {
     width: 100%;
   }
 }
+.imgrow {
+  margin: 72px auto;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .imgrow {
+    margin: 36px auto;
+  }
+}
+.imgrow img {
+  display: block;
+}
+.imgrow img.single {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 0;
+}
+.imgrow.fit:before,
+.imgrow.fit:after {
+  content: '';
+  display: table;
+}
+.imgrow.fit:after {
+  clear: both;
+}
+.imgrow.fit img {
+  display: inline-block;
+  height: 600px;
+}
+.imgrow.fit img:first-child {
+  margin-right: 18px;
+}
+@media screen and (max-width: 767px) {
+  .imgrow.fit img:first-child {
+    margin-right: 5px;
+  }
+}
 /* COLOR SCHEMES
 *************************************************/
 .slide.color-lightongrey90 {

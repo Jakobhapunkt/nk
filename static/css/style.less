@@ -705,6 +705,41 @@ h3 {
 	}
 }
 
+.imgrow {
+	margin: 72px auto;
+	font-size: 0;
+	line-height: 0;
+	text-align: center;
+
+	@media @phone {
+		margin: 36px auto;
+	}
+
+	img {
+		display: block;
+	}
+	img.single {
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto 0;
+	}
+
+	&.fit {
+		.clearfix();
+
+		img {
+			display: inline-block;
+			height: 600px;
+			&:first-child {
+				margin-right: 18px;
+				@media @phone {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+
 /* COLOR SCHEMES
 *************************************************/
 .white-link(){
