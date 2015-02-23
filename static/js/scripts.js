@@ -114,11 +114,11 @@ $(document).ready(function($) {
             // move track
             if (features.transform3d) {
                 elm.track.css({
-                    '-webkit-transform': 'translate3d('+shift_left+'px, 0, 0)',
-                    '-moz-transform':    'translate3d('+shift_left+'px, 0, 0)',
-                    '-ms-transform':     'translate3d('+shift_left+'px, 0, 0)',
-                    '-o-transform':      'translate3d('+shift_left+'px, 0, 0)',
-                    'transform':         'translate3d('+shift_left+'px, 0, 0)'
+                    '-webkit-transform': 'translate('+shift_left+'px, 0)',
+                    '-moz-transform':    'translate('+shift_left+'px, 0)',
+                    '-ms-transform':     'translate('+shift_left+'px, 0)',
+                    '-o-transform':      'translate('+shift_left+'px, 0)',
+                    'transform':         'translate('+shift_left+'px, 0)'
                 });
             } else {
                 elm.track.css('left', shift_left);
